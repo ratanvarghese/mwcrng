@@ -14,8 +14,8 @@ Simulates a coin toss. Has a 50% chance of returning true, and a 50% chance of r
 
 ## mwcrng.dice(throws, sides)
 
-Simulates throws `throws` dice, each with an equal chance of providing any result from 1 to `sides` inclusive. The result is the sum of all the values of all the simulated dice.
+Simulates throwing `throws` number of dice, each with an equal chance of providing any result from 1 to `sides` inclusive. The result is the sum of all the values of all the simulated dice.
 
 For example, `dice(1,6)` would return any value from 1 to 6 inclusive with equal probability.
 
-`dice(2,4)` would return any value from 2 to 8 inclusive, but not with equal probability: values of exactly 2 and 8 would be unlikely.
+`dice(2,4)` would return any value from 2 to 8 inclusive, but not with equal probability: values of exactly 2 and 8 would be relatively unlikely.
