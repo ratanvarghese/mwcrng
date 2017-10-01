@@ -6,9 +6,6 @@
 #include <lauxlib.h>
 #include <lualib.h>
 
-/*Cube of Time headers*/
-#include "l_rng.h"
-
 /*static globals*/
 #define NUMBER_OF_SEEDS 4096
 static uint32_t seeds[NUMBER_OF_SEEDS];
