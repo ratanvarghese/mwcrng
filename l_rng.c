@@ -102,6 +102,5 @@ static const struct luaL_Reg rng_lib [] = {
 int luaopen_mwcrng(lua_State* L)
 {
     luaL_newlib(L, rng_lib);
-    lua_setglobal(L, "mwcrng");
-    return 0;
+    return 1;
 }
