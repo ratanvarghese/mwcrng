@@ -12,7 +12,7 @@ Initializes the library, and must be called before any other function. The argum
 
 Simulates a coin toss. Has a 50% chance of returning true, and a 50% chance of returning false.
 
-## mwcrng.dice([throws], [sides])
+## mwcrng.dice(throws, sides)
 
 Simulates throws `throws` dice, each with an equal chance of providing any result from 1 to `sides` inclusive. The result is the sum of all the values of all the simulated dice.
 
