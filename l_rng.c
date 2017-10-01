@@ -8,7 +8,6 @@
 
 /*Cube of Time headers*/
 #include "l_rng.h"
-#include "base.h"
 
 /*static globals*/
 #define NUMBER_OF_SEEDS 4096
@@ -103,15 +102,9 @@ static const struct luaL_Reg rng_lib [] = {
     {NULL, NULL} /*Sentinel*/
 }; 
 
-int luaopen_rng(lua_State* L)
+int luaopen_mwcrng(lua_State* L)
 {
-    base_openlib(L, rng_lib, "rng");
-
-    /*Set default metaseed*/ 
-    lua_getglobal(L, "rng");
-    lua_pushinteger(L, (uint32_t) time(NULL));
-    lua_setfield(L, 1, "metaseed");
-    lua_pop(L, 1);
-
-    return 1;
+    luaL_newlib(L, rng_lib);
+    lua_setglobal(L, "mwcrng");
+    return 0;
 }
