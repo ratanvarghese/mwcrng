@@ -1,8 +1,8 @@
 package = "MWCRNG"
-version = "1.1-1"
+version = "1.2-1"
 source = {
     url = "git://github.com/ratanvarghese/mwcrng",
-    tag = "v1.1"
+    tag = "v1.2"
 }
 description = {
     summary = "A Multiply-With-Carry Pseudorandom Number Generator.",
