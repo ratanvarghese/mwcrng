@@ -1,7 +1,3 @@
-/*C standard Library*/
-#include <time.h>
-
-/*Lua Library*/
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
